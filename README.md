@@ -106,7 +106,7 @@ Here is a quick overview on how to setup the `Africommerce` repository as a cont
 
 
 
-## 🤝 Contributing to `Africommerce`
+## 🤝 Contributing to `Project-name`
 
 Please help us to grow by contributing to the project. If you wish to contribute, you can;
 
