@@ -1,13 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <h1>E-comm Dev Homepage</h1>
-    </div>
-  );
+interface JSX.IntrinsicElements {
+  [elemName: string]: any;
 }
 
-export default App;
+
+function App({}: Props) {
+  return (
+    <div>App</div>
+  )
+}
+
+export default App
