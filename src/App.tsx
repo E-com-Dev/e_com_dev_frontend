@@ -1,14 +1,9 @@
-import React from 'react'
+import React from "react";
 
-interface JSX.IntrinsicElements {
-  [elemName: string]: any;
-}
-
+type Props = {};
 
 function App({}: Props) {
-  return (
-    <div>App</div>
-  )
+  return <div>App</div>;
 }
 
-export default App
+export default App;
