@@ -1,12 +1,23 @@
-import React from 'react';
-
-import './App.css';
+import React from "react";
+import { CssBaseline, Container } from "@mui/material";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "./theme/theme";
+import { Home } from "./pages/Home";
+import { Navbar } from "./components/navbar";
+import Footer  from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <h1>E-comm Dev Homepage</h1>
-    </div>
+    <>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <Container maxWidth="lg">
+          <Navbar />
+          <Home />
+          <Footer/>
+        </Container>
+      </ThemeProvider>
+    </>
   );
 }
 
