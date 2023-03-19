@@ -1,51 +1,60 @@
 import React from "react";
 import {
+  Button,
+  Stack,
+  Box,
   Typography,
+  //   CardContent,
+  //   CardActionArea,
+  //   CardMedia,
   Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
 } from "@mui/material";
 
-// type Props = {};
-// {}: Props
+type Props = {};
 
-function Product() {
+function Product({}: Props) {
   return (
     <Card>
-      <CardActionArea
-        sx={{
-          padding: "0.625rem",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
-        <CardMedia
-          image="/cloths/1.png"
-          component="img"
-          alt=""
+      <Box sx={{ padding: "1rem" }}>
+        <Box
           sx={{
-            padding: "0.625rem",
-            height: { xs: "9rem", sm: "10.5rem", md: "12.5rem" },
-            width: { xs: "9rem", sm: "10.5rem", md: "12.5rem" },
+            width: "100%",
+            height: "11.25rem",
+            borderRadius: "0.75rem",
+            background: "url(/cloths/1.png)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+            backgroundPosition: "Center",
+            marginX: "auto",
+            marginBottom: "1rem",
+            position: "relative",
           }}
-        />
-        <CardContent sx={{ paddingTop: { xs: "1rem" }, px: 0 }}>
-          <Typography fontWeight={500} variant="body1">
-            $10.99
-          </Typography>
-          <Typography
-            variant="body2"
+        >
+          <Box
             sx={{
-              fontSize: { xs: "0.8125rem", sm: "1rem" },
-              pt: 0.5,
+              position: "absolute",
+              background: "red",
+              bottom: "0.75rem",
+              left: "0.75rem",
+              height: "24px",
+              width: 24,
+              borderRadius: "50%",
             }}
-          >
-            T-shirts with multiple colors, for men
+          />
+        </Box>
+        <Box sx={{ padding: 0 }}>
+          <Typography variant="body1">Product title</Typography>
+          <Typography variant="caption" sx={{ paddingTop: "0.25rem" }}>
+            Space for a small product description
           </Typography>
-        </CardContent>
-      </CardActionArea>
+          <Stack direction="row" justifyContent="space-between" pt={2}>
+            <Typography variant="h6">N10,000</Typography>
+            <Box>
+              <Button variant="primary">Buy Now</Button>
+            </Box>
+          </Stack>
+        </Box>
+      </Box>
     </Card>
   );
 }
