@@ -14,7 +14,6 @@ function App() {
         <Container maxWidth="lg">
           <Navbar />
           <Home />
-
           <Footer/>
         </Container>
       </ThemeProvider>
