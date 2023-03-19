@@ -1,33 +1,38 @@
 import React from "react";
-import { Grid } from "@mui/material/";
 import Product from "./Product";
-import Typography from "@mui/material/Typography";
+import { Grid, Typography, Stack } from "@mui/material";
 
 type Props = {};
 
 function Products({}: Props) {
   return (
     <>
-      <Typography
-        sx={{
-          p: { xs: 0.5, sm: 1, md: 1.25 },
-          fontSize: { xs: "1.125rem", md: "1.5rem" },
-        }}
-        variant="h5"
+      <Stack
+        justifyContent="space-between"
+        flexDirection="row"
+        sx={{ padding: "1rem" }}
       >
-        Recommended Products
-      </Typography>
-      <Grid container sx={{ width: "100%" }}>
-        {["1", "2", "3", "4", "5s", "1", "2", "3", "4", "5s"].map((item) => (
-          <Grid
-            key={item}
-            item
-            xs={6}
-            sm={4}
-            md={3}
-            lg={2.4}
-            sx={{ width: "100%", p: { xs: 0.5, sm: 1, md: 1.25 } }}
-          >
+        <Typography variant="body1">Popular Items</Typography>
+        <Typography variant="body1">See All</Typography>
+      </Stack>
+      <Grid container>
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+          <Grid key={item} item xs={3} sx={{ padding: "1rem" }}>
+            <Product />
+          </Grid>
+        ))}
+      </Grid>
+      <Stack
+        justifyContent="space-between"
+        flexDirection="row"
+        sx={{ paddingTop: "2rem", paddingX: "1rem" }}
+      >
+        <Typography variant="body1">Feeds</Typography>
+        <Typography variant="body1">See All</Typography>
+      </Stack>
+      <Grid container>
+        {[1, 2, 3, 4].map((item) => (
+          <Grid key={item} item xs={3} sx={{ padding: "1rem" }}>
             <Product />
           </Grid>
         ))}

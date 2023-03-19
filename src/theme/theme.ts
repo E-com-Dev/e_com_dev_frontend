@@ -11,10 +11,8 @@ declare module "@mui/material/Button" {
 
 export const theme = createTheme({
   typography: {
-    body2: {
-      fontWeight: 400,
-      fontSize: "0.8125rem",
-      color: "#8B96A5",
+    body1: {
+      fontSize: "1rem",
     },
   },
 
@@ -24,13 +22,19 @@ export const theme = createTheme({
         {
           props: { variant: "primary" },
           style: {
-            background: "#FFFFFF",
-            color: "#1C1C1C",
-            fontSize: "1rem",
-            paddingY: "0.625rem",
-            paddingX: "1rem",
-            fontWeight: 500,
+            background: "#6A983C",
+            color: "white",
+            fontSize: "0.875rem",
+            paddingY: "0.44rem",
+            paddingX: "0.75rem",
+            fontWeight: 700,
             textTransform: "none",
+            border: "2px solid #46760A",
+            borderRadius: "0.75rem",
+            "&:hover": {
+              background: "#6A983C",
+              color: "white",
+            },
           },
         },
       ],

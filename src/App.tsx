@@ -1,8 +1,10 @@
 import React from "react";
-import Home from "./pages/Home/Home";
 import { CssBaseline, Container } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "./theme/theme";
+import { Home } from "./pages/Home";
+import { Navbar } from "./components/navbar";
+import Footer  from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -10,7 +12,10 @@ function App() {
       <CssBaseline />
       <ThemeProvider theme={theme}>
         <Container maxWidth="lg">
+          <Navbar />
           <Home />
+
+          <Footer/>
         </Container>
       </ThemeProvider>
     </>
