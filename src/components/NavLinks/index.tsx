@@ -35,7 +35,7 @@ const NavLinks = () => {
   };
 
   const tabs = [
-    { label: "WOMEN", index: 0 },
+    { label: "Women", index: 0 },
     { label: "Men", index: 1 },
     { label: "Kids", index: 2 },
     { label: "Home", index: 3 },
@@ -64,11 +64,12 @@ const NavLinks = () => {
                   background: " #F9F9F9",
                   color: value === index ? "#6A983C" : "inherit",
                   fontWeight: value === index ? "bold" : "normal",
+                  textTransform: "capitalize",
                 }}
               >
                 {tab.label}
                 <ArrowDropDownIcon
-                  sx={{ color: "#6A983C", fontSize: "medium" }}
+                  sx={{ color: "#6A983C", fontSize: "medium", mb: 0.5 }}
                 />
               </Box>
             }
