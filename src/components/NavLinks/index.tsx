@@ -1,32 +1,27 @@
 import * as React from "react";
 import { Tabs, Box, Tab } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { ITabPanelProps } from "./Interfaces";
 
-interface TabPanelProps {
-  children?: React.ReactNode;
-  index: number;
-  value: number;
-}
-
-const TabPanel = (props: TabPanelProps) => {
+const TabPanel = (props: ITabPanelProps) => {
   const { children, value, index, ...other } = props;
 
   return (
     <Box
       role="tabpanel"
       hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
+      id={`tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && <Box p={3}>{children}</Box>}
+      {value === index && <Box p={2}>{children}</Box>}
     </Box>
   );
 };
 
 const TabsProps = (index: number) => {
   return {
-    id: `simple-tab-${index}`,
+    id: `tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`,
   };
 };
@@ -39,7 +34,7 @@ const NavLinks = () => {
   };
 
   const tabs = [
-    { label: "Women", index: 0 },
+    { label: "WOMEN", index: 0 },
     { label: "Men", index: 1 },
     { label: "Kids", index: 2 },
     { label: "Home", index: 3 },
@@ -66,10 +61,14 @@ const NavLinks = () => {
                   display: "flex",
                   alignItems: "center",
                   background: " #F9F9F9",
+                  color: value === index ? "#6A983C" : "inherit",
+                  fontWeight: value === index ? "bold" : "normal",
                 }}
               >
                 {tab.label}
-                <ArrowDropDownIcon />
+                <ArrowDropDownIcon
+                  sx={{ color: "#6A983C", fontSize: "medium" }}
+                />
               </Box>
             }
             {...TabsProps(index)}
