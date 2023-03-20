@@ -15,7 +15,7 @@ function App() {
         <Container maxWidth="lg">
           <NavLinks />
           <Navbar />
-          <Home />
+          {/* <Home /> */}
 
           <Footer />
         </Container>

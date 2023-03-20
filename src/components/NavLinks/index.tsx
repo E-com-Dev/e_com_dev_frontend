@@ -2,6 +2,7 @@ import * as React from "react";
 import { Tabs, Box, Tab } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { ITabPanelProps } from "./Interfaces";
+import { Home } from "src/pages/Home";
 
 const TabPanel = (props: ITabPanelProps) => {
   const { children, value, index, ...other } = props;
@@ -86,7 +87,7 @@ const NavLinks = () => {
         Kids
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Home
+        <Home />
       </TabPanel>
       <TabPanel value={value} index={4}>
         Entertainment
