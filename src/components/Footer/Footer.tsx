@@ -70,7 +70,7 @@ const Footer = () => {
                     Press Releases
                 </MyText>
             </Box>
-            <Box component="div" sx={{display: 'flex', justifyContent: "space-between", flexDirection: "column", margin: 2, width: { xs:100, sm: 100, md: 200} }}>
+            <Box component="div" sx={{ display: 'flex', justifyContent: "space-between", flexDirection: "column", margin: 2, width: { xs:100, sm: 100, md: 200} }}>
                 <Typography variant="body1" sx={{ fontWeight: 600, fontSize: 18 }} >
                     Connections
                 </Typography>
