@@ -15,7 +15,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 
 import MoreIcon from "@mui/icons-material/MoreVert";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
-import NavLinks from "./navLinks";
+// import NavLinks from "./navLinks";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -194,7 +194,7 @@ export default function PrimarySearchAppBar() {
           </Box>
         </Toolbar>
       </AppBar>
-      <NavLinks />
+      {/* <NavLinks /> */}
       {renderMobileMenu}
       {renderMenu}
     </Box>
