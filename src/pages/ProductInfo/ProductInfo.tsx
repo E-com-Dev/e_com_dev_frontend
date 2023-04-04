@@ -6,8 +6,17 @@ import compare from '../../components/Assets/compare.svg'
 import { Add, Favorite, FavoriteBorder, KeyboardArrowRight } from '@mui/icons-material'
 import ProductInfoTab from '../../components/ProductInfoTab/ProductInfoTab'
 import ProductInfoCard from 'src/components/ProductInfoCard/ProductInfoCard'
+import SubNav from 'src/components/SubNav/SubNav'
 
-
+const CustomTypography = styled(Typography)({
+  fontFamily: 'Open Sans, sans-serif',
+  fontStyle: 'normal',
+  fontWeight: '400',
+  fontSize: '12px',
+  lineHeight: '16px',
+  color: '#A9A9A9',
+  textTransform: 'none'
+})
 const CustomDiv = styled('p')({
   fontFamily: 'Open Sans, sans-serif',
   fontStyle: 'normal',
@@ -38,7 +47,14 @@ const ProductInfo = () => {
   const theme = useTheme();
   const Cards = [1,2,3,4]
   return (
+    <Box sx={{maxWidth: '1280px', margin: '0 auto'}}>
+      <SubNav />
     <Box sx={{maxWidth: '1260px', padding: {xs:'0 8px 0 8px', md: '0 40px 0 40px'}}}>
+      <Box sx={{display: 'flex', flexDirection: 'row', padding: '15px 0px', marginBottom: '16px'}}>
+        <CustomTypography>Homepage /</CustomTypography>
+        <CustomTypography sx={{paddingLeft: '8px'}}>Laptop /</CustomTypography>
+        <CustomTypography sx={{color:'#151515', paddingLeft: '8px'}}>Neatly used Toshiba laptop</CustomTypography>
+      </Box>
       <Box>
         <Stack direction={{ xs: 'column', md: 'row' }} sx={{ marginBottom: '6px', justifyContent: 'space-between', alignItems: { xs: 'center', md: 'flex-start' }}}>
           <CardMedia 
@@ -156,6 +172,7 @@ const ProductInfo = () => {
         }
       </Stack>
 
+    </Box>
     </Box>
     
   )

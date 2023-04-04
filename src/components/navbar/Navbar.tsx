@@ -200,3 +200,5 @@ export default function PrimarySearchAppBar() {
     </Box>
   );
 }
+
+

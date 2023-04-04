@@ -2,24 +2,6 @@ import { Box, Container, Typography, Link } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 
-const currencies = [
-  {
-    value: 'USD',
-    label: '$',
-  },
-  {
-    value: 'EUR',
-    label: '€',
-  },
-  {
-    value: 'BTC',
-    label: '฿',
-  },
-  {
-    value: 'JPY',
-    label: '¥',
-  },
-];
 
 
 const Footer = () => {
@@ -83,32 +65,7 @@ const Footer = () => {
             </Box>
         </Container>
 
-        <Box
-      component="form"
-      sx={{
-        '& .MuiTextField-root': { m: 1, width: '25ch', borderBottom: 'none' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <div>
-        <TextField
-          id="outlined-select-currency"
-          select
-          variant='standard'
-          defaultValue="USD"
-          sx={{border: 'none', '& .MuiInputBase-root:before': {border: 'none'}, '& .MuiInputBase-root:after': {border: 'none'}}}
-          
-        >
-          {currencies.map((option) => (
-            <MenuItem key={option.value} value={option.value}>
-              {option.label}
-            </MenuItem>
-          ))}
-        </TextField>
         
-      </div>
-    </Box>
     </div>
   )
 }

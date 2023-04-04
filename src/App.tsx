@@ -1,12 +1,13 @@
 import React from "react";
-import { CssBaseline, Box } from "@mui/material";
+import { CssBaseline} from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "./theme/theme";
+import {Routes, Route} from 'react-router-dom'
 // import Navbar from "./components/navbar/Navbar";
-// import Footer from "./components/Footer/Footer";
-// import SubNav from "./components/SubNav/SubNav";
+import Footer from "./components/Footer/Footer";
 import ProductInfo from "./pages/ProductInfo/ProductInfo";
-// import ProductInfoTab from "./components/ProductInfoTab/ProductInfoTab"
+import Home from "./pages/Home/Home";
+
 
 
 function App() {
@@ -14,14 +15,11 @@ function App() {
     <>
       <CssBaseline />
       <ThemeProvider theme={theme}>
-        <Box>
-          {/* <Navbar /> */}
-          {/* <SubNav /> */}
-          <ProductInfo />
-          {/* <Footer /> */}
-          {/* <ProductInfoTab /> */}
-          {/* <ProductInfoTab /> */}
-        </Box>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='/productinfo' element={<ProductInfo />} />
+        </Routes>
+        <Footer />
       </ThemeProvider>
     </>
   );

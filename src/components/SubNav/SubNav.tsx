@@ -22,8 +22,8 @@ const SubNav = () => {
     setAnchorEl(null);
   };
   return (
-    <Box>
-      <Stack direction={"row"} sx={{background: '#F9F9F9', color: '#151515', height: '55px', alignItems: 'center' }}>
+
+      <Stack direction={"row"} sx={{background: '#F9F9F9', color: '#151515', height: '55px', alignItems: 'center', padding: '0 32px', maxWidth: '1280px' }}>
         <Box>
           <DropdownButton
             onClick={handleClick}
@@ -151,7 +151,6 @@ const SubNav = () => {
           </Menu>
         </Box>
       </Stack>
-    </Box>
   );
 };
 
