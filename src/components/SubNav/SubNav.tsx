@@ -4,12 +4,13 @@ import { KeyboardArrowDown } from "@mui/icons-material";
 
 
 const DropdownButton = styled(Button)({
-  color: '#151515', fontFamily: 'Poppins, sans-serif',
+  color: '#151515', 
+  fontFamily: 'Poppins, sans-serif',
   fontStyle: 'normal',
-fontWeight: '500',
-fontSize: '15px',
-lineHeight: '22px',
-'&.MuiButton-root': {textTransform: 'initial'},
+  fontWeight: '500',
+  fontSize: '15px',
+  lineHeight: '22px',
+  '&.MuiButton-root': {textTransform: 'initial'},
 })
 
 const SubNav = () => {
