@@ -5,7 +5,13 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { GoogleIcon } from "src/Assets";
+import InputAdornment from "@mui/material/InputAdornment";
+import LockIcon from "@mui/icons-material/Lock";
+import FormControlLabel from "@mui/material/FormControlLabel/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox/Checkbox";
+
 import { Button, TextField } from "@mui/material";
+import EmailIcon from "@mui/icons-material/Email";
 import { Link } from "react-router-dom";
 
 const SignIn = (): JSX.Element => {
@@ -25,13 +31,35 @@ const SignIn = (): JSX.Element => {
               mt: 2,
             }}
           >
-            <Button variant="primary" sx={{ display: "flex" }}>
+            <Button
+              sx={{
+                display: "flex",
+                color: "#0000FF",
+                background: "#ffffff",
+                border: "1px solid black",
+              }}
+            >
               <FacebookIcon sx={{ color: "#0000ff" }} /> Facebook
             </Button>
-            <Button variant="primary" sx={{ display: "flex" }}>
+            <Button
+              sx={{
+                display: "flex",
+                color: "#000000",
+                background: "#ffffff",
+                border: 1,
+              }}
+            >
               <GoogleIcon style={{ height: 20 }} />
               Google
             </Button>
+          </Box>
+          <Box mt={20}>
+            <Typography variant="h6" sx={{ color: "#6A983C" }}>
+              Not a member ?{" "}
+              <Link to="" style={{ color: "#6A983C" }}>
+                Sign up now
+              </Link>
+            </Typography>
           </Box>
         </Box>
       }
@@ -42,7 +70,15 @@ const SignIn = (): JSX.Element => {
           name="email"
           placeholder="Email"
           fullWidth
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <EmailIcon />
+              </InputAdornment>
+            ),
+          }}
         />
+
         <TextField
           fullWidth
           name="password"
@@ -51,10 +87,23 @@ const SignIn = (): JSX.Element => {
           sx={{
             marginBottom: 2,
           }}
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <LockIcon />
+              </InputAdornment>
+            ),
+          }}
         />
       </Box>
+
+      <FormControlLabel
+        control={<Checkbox sx={{ color: "#6A983C" }} />}
+        label="Remember me"
+      />
+
       <Button variant="primary" fullWidth sx={{ height: 50 }}>
-        <Link style={{ textDecoration: "none" }} to="/home">
+        <Link style={{ textDecoration: "none", color: "#ffffff" }} to="/home">
           Log In
         </Link>
       </Button>
