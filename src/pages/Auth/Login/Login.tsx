@@ -7,6 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import { GoogleIcon } from "src/Assets";
 import InputAdornment from "@mui/material/InputAdornment";
 import LockIcon from "@mui/icons-material/Lock";
+import { green } from "@mui/material/colors";
 import FormControlLabel from "@mui/material/FormControlLabel/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox/Checkbox";
 
@@ -39,7 +40,7 @@ const SignIn = (): JSX.Element => {
                 border: "1px solid black",
               }}
             >
-              <FacebookIcon sx={{ color: "#0000ff" }} /> Facebook
+              <FacebookIcon sx={{ color: "#0000ff", mr: 2 }} /> Facebook
             </Button>
             <Button
               sx={{
@@ -98,7 +99,16 @@ const SignIn = (): JSX.Element => {
       </Box>
 
       <FormControlLabel
-        control={<Checkbox sx={{ color: "#6A983C" }} />}
+        control={
+          <Checkbox
+            sx={{
+              color: green[800],
+              "&.Mui-checked": {
+                color: green[600],
+              },
+            }}
+          />
+        }
         label="Remember me"
       />
 
