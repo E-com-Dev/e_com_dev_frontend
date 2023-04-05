@@ -3,6 +3,7 @@ import { Tabs, Box, Tab } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { ITabPanelProps } from "./Interfaces";
 import { Home } from "src/pages/Home";
+import Footer from "src/components/Footer/Footer";
 
 const TabPanel = (props: ITabPanelProps) => {
   const { children, value, index, ...other } = props;
@@ -93,6 +94,7 @@ const NavLinks = () => {
       <TabPanel value={value} index={4}>
         Entertainment
       </TabPanel>
+      <Footer />
     </Box>
   );
 };

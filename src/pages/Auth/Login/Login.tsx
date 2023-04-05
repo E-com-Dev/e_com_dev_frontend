@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { GoogleIcon } from "src/Assets";
 import { Button, TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const SignIn = (): JSX.Element => {
   return (
@@ -13,20 +14,21 @@ const SignIn = (): JSX.Element => {
       title="LOGIN"
       footerNode={
         <Box>
-          <Typography variant="h6" mt={2} color="grey">
+          <Typography variant="body1" mt={2} sx={{ color: "#808080" }}>
             Or log in with
           </Typography>
           <Box
             sx={{
               display: "flex",
-              textAlign: "space-around",
+              justifyContent: "space-between",
               alignItems: "center",
+              mt: 2,
             }}
           >
-            <Button sx={{ display: "flex" }}>
-              <FacebookIcon /> Facebook
+            <Button variant="primary" sx={{ display: "flex" }}>
+              <FacebookIcon sx={{ color: "#0000ff" }} /> Facebook
             </Button>
-            <Button sx={{ display: "flex" }}>
+            <Button variant="primary" sx={{ display: "flex" }}>
               <GoogleIcon style={{ height: 20 }} />
               Google
             </Button>
@@ -51,8 +53,10 @@ const SignIn = (): JSX.Element => {
           }}
         />
       </Box>
-      <Button variant="outlined" fullWidth>
-        LOG IN
+      <Button variant="primary" fullWidth sx={{ height: 50 }}>
+        <Link style={{ textDecoration: "none" }} to="/home">
+          Log In
+        </Link>
       </Button>
     </AuthLayout>
   );
