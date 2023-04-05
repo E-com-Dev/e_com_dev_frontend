@@ -15,7 +15,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 
 import MoreIcon from "@mui/icons-material/MoreVert";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
-import NavLinks from "./navLinks";
+import NavLinks from "./NavLinks";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
