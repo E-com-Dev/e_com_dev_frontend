@@ -2,9 +2,9 @@ import React from "react";
 import Product from "./Product";
 import { Grid, Typography, Stack } from "@mui/material";
 
-type Props = {};
+// type Props = {};
 
-function Products({}: Props) {
+function Products() {
   return (
     <>
       <Stack

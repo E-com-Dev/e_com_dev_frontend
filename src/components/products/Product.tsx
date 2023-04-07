@@ -10,9 +10,9 @@ import {
   Card,
 } from "@mui/material";
 
-type Props = {};
+// type Props = {};
 
-function Product({}: Props) {
+function Product() {
   return (
     <Card>
       <Box sx={{ padding: "1rem" }}>
