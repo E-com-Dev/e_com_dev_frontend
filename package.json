@@ -50,7 +50,13 @@
     "@typescript-eslint/parser": "^5.57.1",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
-    "husky": "^8.0.3",
     "react-test-renderer": "^18.2.0"
+  },
+ 
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
+  
 }
