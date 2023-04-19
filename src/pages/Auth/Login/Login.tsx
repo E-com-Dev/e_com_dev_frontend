@@ -67,7 +67,7 @@ const SignIn = (): JSX.Element => {
     >
       <Box>
         <TextField
-          sx={{ marginBottom: 2 }}
+          sx={{ marginBottom: 3 }}
           name="email"
           placeholder="Email"
           fullWidth
