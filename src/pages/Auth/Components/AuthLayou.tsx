@@ -14,7 +14,7 @@ const AuthLayout = ({
     <Box
       sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
     >
-      <Box mt={15}>
+      <Box mt={10}>
         <Box>
           <Typography
             sx={{

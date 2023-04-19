@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
 declare module "@mui/material/styles" {
-  interface Theme {}
+  // interface Theme {}
 }
 declare module "@mui/material/Button" {
   interface ButtonPropsVariantOverrides {

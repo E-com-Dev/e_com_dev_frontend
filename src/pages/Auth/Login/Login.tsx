@@ -4,7 +4,7 @@ import AuthLayout from "../Components/AuthLayou";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import { GoogleIcon } from "src/Assets";
+import { GoogleIcon } from "src/assets";
 import InputAdornment from "@mui/material/InputAdornment";
 import LockIcon from "@mui/icons-material/Lock";
 import { green } from "@mui/material/colors";
@@ -54,7 +54,7 @@ const SignIn = (): JSX.Element => {
               Google
             </Button>
           </Box>
-          <Box mt={20}>
+          <Box mt={10}>
             <Typography variant="h6" sx={{ color: "#6A983C" }}>
               Not a member ?{" "}
               <Link to="" style={{ color: "#6A983C" }}>
