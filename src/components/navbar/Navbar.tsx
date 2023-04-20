@@ -1,3 +1,4 @@
+
 // import react from 'react'
 import SelectData from './SelectData'
 import InputSearch from './InputSearch'
@@ -11,6 +12,7 @@ export default function Navbar () {
         component="div"
         sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}
        
+
         >
             <SelectData />
             <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
