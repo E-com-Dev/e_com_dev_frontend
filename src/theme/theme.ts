@@ -11,6 +11,7 @@ declare module "@mui/material/Button" {
 
 export const theme = createTheme({
   typography: {
+    // fontFamily: ["Poppins", "Open Sans", "sans-serif"].join(","),
     body1: {
       fontSize: "1rem",
     },

@@ -1,8 +1,15 @@
 import React from "react";
-import { CssBaseline, Container } from "@mui/material";
+import { CssBaseline} from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "./theme/theme";
-import { Routes, Route } from "react-router-dom";
+
+
+import {Routes, Route} from 'react-router-dom'
+import Footer from "./components/Footer/Footer";
+import ProductInfo from "./pages/ProductInfo/ProductInfo";
+import Home from "./pages/Home/Home";
+
+
 import AuthRoutes from "./routes";
 
 function App() {
@@ -10,11 +17,7 @@ function App() {
     <>
       <CssBaseline />
       <ThemeProvider theme={theme}>
-        <Container maxWidth="lg">
-          <Routes>
-            <Route path="/*" element={<AuthRoutes />} />
-          </Routes>
-        </Container>
+
       </ThemeProvider>
     </>
   );

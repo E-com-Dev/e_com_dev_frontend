@@ -1,6 +1,8 @@
 import { Box, Container, Typography, Link } from '@mui/material';
 
 
+
+
 const Footer = () => {
   return (
     <div>
@@ -61,6 +63,8 @@ const Footer = () => {
                 </Typography>
             </Box>
         </Container>
+
+        
     </div>
   )
 }
