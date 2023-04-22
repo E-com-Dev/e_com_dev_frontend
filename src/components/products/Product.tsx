@@ -30,7 +30,7 @@ function Product() {
             position: "relative",
           }}
         >
-          <Box
+          {/* <Box
             sx={{
               position: "absolute",
               background: "red",
@@ -40,7 +40,7 @@ function Product() {
               width: 24,
               borderRadius: "50%",
             }}
-          />
+          /> */}
         </Box>
         <Box sx={{ padding: 0 }}>
           <Typography variant="body1">Product title</Typography>

@@ -1,5 +1,6 @@
 import { Card, CardMedia, Typography, styled, Stack, Button, Box } from '@mui/material'
 import laptop from '../Assets/laptop.jpg'
+import React from 'react';
 
 const CardStyle = {
     width: '268px', 

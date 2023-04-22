@@ -7,6 +7,7 @@ import { Add, Favorite, FavoriteBorder, KeyboardArrowRight } from '@mui/icons-ma
 import ProductInfoTab from '../../components/ProductInfoTab/ProductInfoTab'
 import ProductInfoCard from 'src/components/ProductInfoCard/ProductInfoCard'
 import SubNav from 'src/components/SubNav/SubNav'
+import React from 'react'
 
 const CustomTypography = styled(Typography)({
   fontFamily: 'Open Sans, sans-serif',

@@ -8,6 +8,7 @@ import {Routes, Route} from 'react-router-dom'
 import Footer from "./components/Footer/Footer";
 import ProductInfo from "./pages/ProductInfo/ProductInfo";
 import Home from "./pages/Home/Home";
+import Container from '@mui/material/Container';
 
 
 import AuthRoutes from "./routes";
@@ -18,6 +19,17 @@ function App() {
       <CssBaseline />
       <ThemeProvider theme={theme}>
 
+        <Container maxWidth="lg">
+        <Routes>
+            <Route path="/*" element={<AuthRoutes /> } />
+            <Route path="/" element={<Home />} />
+          <Route path='/productinfo' element={<ProductInfo />} />
+        </Routes>
+        <Footer />
+
+        
+      </Container>
+       
       </ThemeProvider>
     </>
   );
