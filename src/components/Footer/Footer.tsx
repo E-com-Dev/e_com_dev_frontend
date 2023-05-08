@@ -43,7 +43,8 @@ const Footer = () => {
 
   return (
     <div >
-        <Container sx={{marginY: 4, }}>
+        
+        <Box sx={{marginY: 4, }}>
             <Typography variant='body1' sx={{marginY: 5, fontSize: 18, fontWeight: 600, color: "#151515"}}>
                 Shop By Brand
             </Typography>
@@ -54,8 +55,8 @@ const Footer = () => {
                     <MyButton key={item}>{item}</MyButton>
                 ))}
             </Box>
-        </Container>
-        <Container sx={{display: 'flex', justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap" }}>
+        </Box>
+        <Box sx={{display: 'flex', justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap" }}>
             <Box component="div" sx={{margin: 2, width: { xs: 100, sm: 100, md: 200} }}>
                 <Typography variant="body1" sx={{ fontWeight: 600, fontSize: 18 }} >
                     Get in touch
@@ -121,7 +122,7 @@ const Footer = () => {
                     Help
                 </MyText>
             </Box>
-        </Container>
+        </Box>
     </div>
   )
 }

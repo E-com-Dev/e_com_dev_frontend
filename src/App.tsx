@@ -11,8 +11,9 @@ function App() {
       <CssBaseline />
       <ThemeProvider theme={theme}>
         <Container maxWidth="lg">
-          <Navbar />
-          <Home />
+          {/* <Navbar /> */}
+          
+          {/* <Home /> */}
           <Footer />
         </Container>
       </ThemeProvider>
