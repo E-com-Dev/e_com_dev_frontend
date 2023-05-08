@@ -10,9 +10,9 @@ import {
   Card,
 } from "@mui/material";
 
-type Props = {};
+// type Props = {};
 
-function Product({}: Props) {
+function Product() {
   return (
     <Card>
       <Box sx={{ padding: "1rem" }}>
@@ -30,7 +30,7 @@ function Product({}: Props) {
             position: "relative",
           }}
         >
-          <Box
+          {/* <Box
             sx={{
               position: "absolute",
               background: "red",
@@ -40,7 +40,7 @@ function Product({}: Props) {
               width: 24,
               borderRadius: "50%",
             }}
-          />
+          /> */}
         </Box>
         <Box sx={{ padding: 0 }}>
           <Typography variant="body1">Product title</Typography>

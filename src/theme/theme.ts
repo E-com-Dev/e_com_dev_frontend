@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
 declare module "@mui/material/styles" {
-  interface Theme {}
+  // interface Theme {}
 }
 declare module "@mui/material/Button" {
   interface ButtonPropsVariantOverrides {
@@ -11,6 +11,7 @@ declare module "@mui/material/Button" {
 
 export const theme = createTheme({
   typography: {
+    // fontFamily: ["Poppins", "Open Sans", "sans-serif"].join(","),
     body1: {
       fontSize: "1rem",
     },

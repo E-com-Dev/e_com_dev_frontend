@@ -1,21 +1,36 @@
 import React from "react";
-import { CssBaseline, Container } from "@mui/material";
+import { CssBaseline} from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "./theme/theme";
-import Navbar from "./components/navbar/Navbar";
+import Login from './pages/Auth/Login/Login';
+
+import {Routes, Route} from 'react-router-dom';
 import Footer from "./components/Footer/Footer";
+import ProductInfo from "./pages/ProductInfo/ProductInfo";
+import Home from "./pages/Home/Home";
+import Container from '@mui/material/Container';
+
+
+import AuthRoutes from "./routes";
 
 function App() {
   return (
     <>
       <CssBaseline />
       <ThemeProvider theme={theme}>
+
         <Container maxWidth="lg">
-          {/* <Navbar /> */}
-          
-          {/* <Home /> */}
-          <Footer />
-        </Container>
+        <Routes>
+            <Route path="/*" element={<AuthRoutes /> } />
+            <Route path="/" element={<Home />} />
+          <Route path='/productinfo' element={<ProductInfo />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+        <Footer />
+
+        
+      </Container>
+       
       </ThemeProvider>
     </>
   );
